@@ -294,5 +294,5 @@
   :update dynamic/update-state
   :draw dynamic/draw-state
   ;; :mouse-clicked (fn [state] (update state :draw-quadtree? not))
-  :features [:keep-on-top :resizable]
+  :features [:keep-on-top]
   :middleware [m/fun-mode])
