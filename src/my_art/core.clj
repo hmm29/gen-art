@@ -287,12 +287,12 @@
 
 (q/defsketch bars
   :title "you rock"
-  :size [640 360]
+  :size [500 500]
   :host "host"
 
   :setup dynamic/setup
-  ;;  :update update-state
+  :update dynamic/update-state
   :draw dynamic/draw-state
   ;; :mouse-clicked (fn [state] (update state :draw-quadtree? not))
-
+  :features [:keep-on-top :resizable]
   :middleware [m/fun-mode])
